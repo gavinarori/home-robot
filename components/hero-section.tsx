@@ -43,7 +43,7 @@ export function HeroSection() {
 
   return (
     <section ref={containerRef} className="relative h-screen overflow-hidden">
-      {/* Background Image with Cinematic Effects */}
+      {/* Background Video with Cinematic Effects */}
       <motion.div
         className="absolute inset-0"
         style={{ scale: imageScale, y: imageY }}
@@ -51,13 +51,13 @@ export function HeroSection() {
         animate={{ scale: 1 }}
         transition={{ duration: 1.2, ease: [0.21, 0.47, 0.32, 0.98] }}
       >
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/u3195299943_une_vue_sur_lespace_toil_--ar_11_--sref_httpss.mj_f1cd1575-c301-46fa-8b30-665ae1ab22a0_3_bloom_subtle_6x.png-EslKdscYhdWOUeP4RBajclEejxh8iO.jpeg"
-          alt="KATACHI Studio - Elegant interior with sage green walls and terracotta furniture overlooking surreal landscape"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
+        <video
+          src="/hero.mp4" 
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/20" />
       </motion.div>
@@ -70,10 +70,10 @@ export function HeroSection() {
         <div className="container-custom text-center text-white">
           <Reveal>
             <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-none tracking-tight mb-6">
-              <AnimatedText text="Design furniture for" delay={0.5} />
+              <AnimatedText text="humanoid robot for" delay={0.5} />
               <br />
               <span className="italic font-light">
-                <AnimatedText text="spaces that breathe." delay={1.1} />
+                <AnimatedText text="homes that live with you." delay={1.1} />
               </span>
             </h1>
           </Reveal>
@@ -85,7 +85,8 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
             >
-              Designed in Belgium, crafted to endure — timeless pieces for modern living.
+              Meet Homu — a safe, capable home assistant that helps with chores, offers gentle companionship,
+              and connects naturally with your voice and your smart home.
             </motion.p>
           </Reveal>
         </div>
@@ -102,15 +103,15 @@ export function HeroSection() {
           <div className="flex items-center justify-center gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <PackageCheck className="w-4 h-4 text-green-400" />
-              <span className="text-sm">Free shipping</span>
+              <span className="text-sm">Preorders open</span>
             </div>
             <div className="flex items-center gap-2">
               <Rocket className="w-4 h-4 text-amber-400" />
-              <span className="text-sm">Delivered in 6 weeks</span>
+              <span className="text-sm">Pilot deliveries in 2026</span>
             </div>
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-blue-400" />
-              <span className="text-sm">Lifetime guarantee</span>
+              <span className="text-sm">Safety-first design</span>
             </div>
           </div>
         </BlurPanel>

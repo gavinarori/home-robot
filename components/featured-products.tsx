@@ -8,61 +8,61 @@ import { Reveal } from "./reveal"
 
 const featuredProducts = [
   {
-    id: "4",
-    name: "Verde Modular Chair",
-    price: "€4,890",
-    image: "/green-velvet-modular-chair.png",
+    id: "h1",
+    name: "Homu One",
+    price: "From $14,900",
+    image: "https://www.1x.tech/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Feve.bc8fab20.png&w=1080&q=75",
     badge: "New" as const,
-    materials: ["Copper Frame", "Premium Velvet"],
+    materials: ["Bimanual manipulation", "Safe mobility", "Natural voice"],
     swatches: [
-      { name: "Forest Green", color: "#355E3B" },
-      { name: "Sage Green", color: "#9CAF88" },
-      { name: "Copper", color: "#B87333" },
+      { name: "Pearl", color: "#F2F4F7" },
+      { name: "Graphite", color: "#111827" },
+      { name: "Sand", color: "#C7BCA1" },
     ],
     quickLookImages: [
-      "/green-velvet-modular-chair.png",
-      "/placeholder.svg?height=600&width=600",
-      "/placeholder.svg?height=600&width=600",
+      "/robots/homu-one-1.jpg",
+      "/robots/homu-one-2.jpg",
+      "/robots/homu-one-3.jpg",
     ],
-    dimensions: "W: 180cm × D: 90cm × H: 75cm",
+    dimensions: "H: 160cm · Mass: 45kg · Payload: 2kg/hand",
   },
   {
-    id: "7",
-    name: "Terracotta Cloud Chair",
-    price: "€5,250",
-    image: "/terracotta-cloud-chair.png",
+    id: "h2",
+    name: "Homu Plus",
+    price: "From $19,900",
+    image: "https://image.mux.com/v26HW01w4lQOb7fYoIskHaHC83PP9WuNGAKKGHylmq9I/thumbnail.webp?time=0",
     badge: "New" as const,
-    materials: ["Copper Frame", "Terracotta Velvet"],
+    materials: ["Advanced dexterity", "Home mapping", "Edge AI safety"],
     swatches: [
-      { name: "Terracotta", color: "#E2725B" },
-      { name: "Burnt Orange", color: "#CC5500" },
-      { name: "Copper", color: "#B87333" },
+      { name: "Pearl", color: "#F2F4F7" },
+      { name: "Slate", color: "#334155" },
+      { name: "Sand", color: "#C7BCA1" },
     ],
     quickLookImages: [
-      "/terracotta-cloud-chair.png",
-      "/placeholder.svg?height=600&width=600",
-      "/placeholder.svg?height=600&width=600",
+      "/robots/homu-plus-1.jpg",
+      "/robots/homu-plus-2.jpg",
+      "/robots/homu-plus-3.jpg",
     ],
-    dimensions: "W: 95cm × D: 85cm × H: 80cm",
+    dimensions: "H: 165cm · Mass: 48kg · Payload: 3kg/hand",
   },
   {
-    id: "8",
-    name: "Sage Copper Lounge",
-    price: "€4,675",
-    image: "/sage-copper-lounge-chair.png",
+    id: "h-lite",
+    name: "Homu Lite",
+    price: "From $9,900",
+    image: "https://www.1x.tech/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqka6yvsc%2Fproduction%2Fc57005d5444e26dcdb1227970060ab689bfd09ea-3024x1694.webp%3Fq%3D100%26fit%3Dmax%26auto%3Dformat&w=3840&q=100",
     badge: "Limited" as const,
-    materials: ["Copper Frame", "Sage Velvet"],
+    materials: ["Essentials assistance", "Voice + app", "Auto-docking"],
     swatches: [
-      { name: "Sage Green", color: "#9CAF88" },
-      { name: "Forest Green", color: "#355E3B" },
-      { name: "Copper", color: "#B87333" },
+      { name: "Pearl", color: "#F2F4F7" },
+      { name: "Graphite", color: "#111827" },
+      { name: "Sky", color: "#94A3B8" },
     ],
     quickLookImages: [
-      "/sage-copper-lounge-chair.png",
-      "/placeholder.svg?height=600&width=600",
-      "/placeholder.svg?height=600&width=600",
+      "/robots/homu-lite-1.jpg",
+      "/robots/homu-lite-2.jpg",
+      "/robots/homu-lite-3.jpg",
     ],
-    dimensions: "W: 85cm × D: 90cm × H: 75cm",
+    dimensions: "H: 150cm · Mass: 39kg · Payload: 1.5kg/hand",
   },
 ]
 
@@ -86,11 +86,11 @@ export function FeaturedProducts() {
         <Reveal>
           <div className="text-left mb-16">
             <h2 className="text-4xl text-neutral-900 mb-4 lg:text-6xl">
-              Featured <span className="italic font-light">Collection</span>
+              Featured <span className="italic font-light">Robots</span>
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl">
-              Discover our most beloved pieces, each crafted with meticulous attention to detail and timeless design
-              principles.
+              Explore Homu models designed for safe, capable assistance at home. Natural interaction meets reliable,
+              everyday help.
             </p>
           </div>
         </Reveal>

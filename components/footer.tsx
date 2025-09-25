@@ -6,26 +6,26 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
-    Shop: [
-      { name: "New Arrivals", href: "#" },
-      { name: "Chairs", href: "#" },
-      { name: "Tables", href: "#" },
-      { name: "Storage", href: "#" },
-      { name: "Lighting", href: "#" },
+    Product: [
+      { name: "Homu One", href: "#" },
+      { name: "Homu Plus", href: "#" },
+      { name: "Homu Lite", href: "#" },
+      { name: "Capabilities", href: "#materials" },
+      { name: "Explore", href: "#featured-products" },
     ],
     Company: [
       { name: "About", href: "#" },
-      { name: "Craftsmanship", href: "#" },
-      { name: "Sustainability", href: "#" },
+      { name: "Safety & Ethics", href: "#" },
       { name: "Careers", href: "#" },
       { name: "Press", href: "#" },
-    ],
-    Support: [
       { name: "Contact", href: "#" },
-      { name: "Size Guide", href: "#" },
-      { name: "Care Instructions", href: "#" },
-      { name: "Shipping", href: "#" },
-      { name: "Returns", href: "#" },
+    ],
+    Developers: [
+      { name: "Docs", href: "#" },
+      { name: "SDK", href: "#" },
+      { name: "Community", href: "#" },
+      { name: "Research", href: "#" },
+      { name: "API Status", href: "#" },
     ],
   }
 
@@ -48,10 +48,10 @@ export function Footer() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold text-neutral-900 mb-4">KATACHI</h3>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">HOMU</h3>
               <p className="text-neutral-600 mb-6 leading-relaxed">
-                Architected in Belgium, built to last. We create timeless furniture pieces in solid oak, steel, and
-                linen for spaces that breathe.
+                The humanoid robot for the home. Designed for safety, usefulness, and natural interaction—bringing
+                gentle assistance to everyday life.
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social) => (
@@ -113,7 +113,7 @@ export function Footer() {
           viewport={{ once: true }}
         >
           <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-neutral-500 text-center">
-            <p>&copy; {currentYear} KATACHI Studio. All rights reserved.</p>
+            <p>&copy; {currentYear} Homu Robotics. All rights reserved.</p>
             <div className="flex space-x-6">
               <a href="#" className="hover:text-neutral-700 transition-colors">
                 Privacy Policy
