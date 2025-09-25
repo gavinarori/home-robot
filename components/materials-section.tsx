@@ -8,28 +8,30 @@ import { cn } from "@/lib/utils"
 
 const materials = [
   {
-    id: "pistachio",
-    name: "Pistachio", // shortened from "Pistachio Green"
-    description: "Luxurious pistachio green velvet with rich texture and depth",
-    image: "/material-oak-macro.png",
+    id: "assist",
+    name: "Assistance",
+    description: "Tidying, dish loading, laundry sorting, light meal prep, and daily routines.",
+    image: "/cap-assist.png",
     backgroundImage:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/new-source_bloom_max_1x.jpg-t1V6yfeAZKKcEvWEkPn7Pfx7hkHDMf.jpeg",
+      "https://www.1x.tech/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqka6yvsc%2Fproduction%2F7b20cd40f136e6fc1fe5704c85a52466526d8d48-4320x2640.webp%3Fw%3D4320%26fit%3Dmax%26auto%3Dformat&w=3840&q=100",
     tint: "bg-green-50",
   },
   {
-    id: "lunar",
-    name: "Lunar", // shortened from "Lunar Gray"
-    description: "Sophisticated lunar gray with subtle metallic undertones",
-    image: "/material-walnut-macro.png",
-    backgroundImage: "/lunar-gray-interior.png",
+    id: "safety",
+    name: "Safety",
+    description: "Fall detection, room awareness, protective motion planning, and privacy by design.",
+    image: "/cap-safety.png",
+    backgroundImage:
+      "https://www.1x.tech/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqka6yvsc%2Fproduction%2F5988401dfa550a1bbf7ca4d4cf70cc8870cca309-3024x1883.webp%3Fq%3D100%26fit%3Dmax%26auto%3Dformat&w=3840&q=75",
     tint: "bg-gray-100",
   },
   {
-    id: "martian",
-    name: "Martian", // shortened from "Martian Red"
-    description: "Bold martian red with warm terracotta influences",
-    image: "/material-steel-macro.png",
-    backgroundImage: "/martian-red-interior.png",
+    id: "presence",
+    name: "Presence",
+    description: "Natural voice, gentle gestures, attentive eye contact, and context memory.",
+    image: "/cap-presence.png",
+    backgroundImage:
+      "https://www.1x.tech/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fqka6yvsc%2Fproduction%2F8be5132be8484a5a8278d842dd271e5a81eb6813-4320x2640.webp%3Fw%3D4320%26fit%3Dmax%26auto%3Dformat&w=3840&q=100",
     tint: "bg-red-50",
   },
 ]
@@ -101,8 +103,8 @@ export function MaterialsSection() {
                 </motion.h2>
               </AnimatePresence>
               <p className="text-lg text-white/90 leading-relaxed max-w-2xl">
-                Every piece begins with the finest materials, carefully selected for their beauty, durability, and
-                sustainable origins. Our craftspeople honor traditional techniques while embracing modern precision.
+                Homu blends dexterous hands, safe mobility, and intuitive conversation to help at home. Explore key
+                capabilities that make everyday life a little easier and a lot more delightful.
               </p>
             </div>
           </Reveal>
@@ -113,10 +115,9 @@ export function MaterialsSection() {
         <Reveal delay={0.3}>
           <blockquote className="pl-0 py-4">
             <p className="text-xl text-white leading-relaxed italic lg:text-base font-medium">
-              "We believe in creating furniture that transcends trends—pieces that become more beautiful with age,
-              carrying stories and memories through generations."
+              "Robots belong in homes when they are gentle, trustworthy, and genuinely useful."
             </p>
-            <footer className="mt-4 text-sm text-white/70">— KATACHI Studio</footer>
+            <footer className="mt-4 text-sm text-white/70">— Homu Team</footer>
           </blockquote>
         </Reveal>
       </div>

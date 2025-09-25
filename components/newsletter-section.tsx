@@ -36,13 +36,13 @@ export function NewsletterSection() {
             <BlurPanel className="p-8 lg:p-12 bg-white/40 backdrop-blur-md grain-texture">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">
-                  <AnimatedText text="Stay ahead of " delay={0.2} />
+                  <AnimatedText text="Get Homu " delay={0.2} />
                   <span className="italic font-light">
-                    <AnimatedText text="quiet luxury." delay={0.5} />
+                    <AnimatedText text="updates first." delay={0.5} />
                   </span>
                 </h2>
                 <p className="text-lg text-neutral-600">
-                  Be the first to discover new collections, design insights, and exclusive access to limited pieces.
+                  Be the first to hear about pilot availability, new capabilities, and developer previews.
                 </p>
               </div>
 
@@ -96,10 +96,10 @@ export function NewsletterSection() {
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Check size={24} className="text-green-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">Welcome to KATACHI</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">Welcome to Homu</h3>
                   <p className="text-neutral-600">
-                    Thank you for subscribing. You'll receive our next newsletter with exclusive insights and new
-                    arrivals.
+                    Thanks for subscribing. We'll share pilot program updates, capability drops, and behind‑the‑scenes
+                    progress.
                   </p>
                 </motion.div>
               )}
